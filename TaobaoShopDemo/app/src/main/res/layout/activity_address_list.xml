@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".AddressListActivity">
+
+    <com.example.taobaoshopdemo.widget.MyToolBar
+        android:id="@+id/addr_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="56dp"
+        app:rightButtonIcon="@drawable/icon_add"
+        app:title="@string/my_addresses" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addr_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
